@@ -1,0 +1,1 @@
+{"latest_version": 2.0, "download_url": "", "message": "", "ngx_equities_url": "https://doclib.ngxgroup.com/REST/api/statistics/equities/?market=&sector=&orderby=&pageSize=300&pageNo=0", "ngx_ticker_url": "https://doclib.ngxgroup.com/REST/api/statistics/ticker", "yahoo_chart_url": "https://query1.finance.yahoo.com/v8/finance/chart/"}
