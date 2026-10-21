@@ -21,6 +21,10 @@ Rules: keep the file valid JSON (commas and quotes). Leave a field empty to use 
 
 ## prices.json (updated automatically)
 
-The "Update prices" action (.github/workflows/update-prices.yml) runs scripts/fetch_prices.py every 30 minutes during NGX trading hours on weekdays, after the close and once at night. It saves the latest NGX share, fund and ETF prices and the official CBN exchange rates to prices.json. The web app uses this file because browsers cannot read the NGX and CBN sites directly; the desktop apps fetch prices directly and use this file only as a fallback.
+The "Update prices" action (.github/workflows/update-prices.yml) runs scripts/fetch_prices.py every 30 minutes during NGX trading hours on weekdays, after the close and once at night. It saves the latest NGX share, fund and ETF prices, the official CBN exchange rates and the Brent oil price to prices.json.
+
+Brent oil (ticker BZ=F in the planner) is the U.S. Energy Information Administration's Europe Brent spot price, read from FRED (St. Louis Fed) with EIA's own page as a backup. It is public-domain U.S. government data, credited in the file's "credits" section. EIA publishes it weekly, so it runs a few days behind the market.
+
+Data rule: only add sources whose terms allow use in a paid product. Free plans from Yahoo Finance, Alpha Vantage, Twelve Data, FMP and similar are for personal use only. Index values (S&P 500, Nasdaq) need the index owner's permission. US ETF, offshore fund and gold prices need a paid redistribution licence. The web app uses this file because browsers cannot read the NGX and CBN sites directly; the desktop apps fetch prices directly and use this file only as a fallback.
 
 To run it by hand: Actions tab > Update prices > Run workflow.
