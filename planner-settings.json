@@ -5,7 +5,7 @@
   "ngx_equities_url": "https://doclib.ngxgroup.com/REST/api/statistics/equities/?market=&sector=&orderby=&pageSize=300&pageNo=0",
   "ngx_ticker_url": "https://doclib.ngxgroup.com/REST/api/statistics/ticker",
   "fx_url": "https://www.cbn.gov.ng/api/GetAllExchangeRates",
-  "app_latest_version": "2.0.0",
+  "app_latest_version": "2.0.1",
   "app_download_url": "https://github.com/legacyportfolio/legacy-planner/releases/latest",
   "buy_url": "https://selar.com/y9v5psiv59",
   "prices_json_url": "https://raw.githubusercontent.com/steve4onu/legacy-planner-settings/main/prices.json"
